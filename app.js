@@ -28,12 +28,18 @@ let MAX_CLICKS;
 let CLICK_COUNT;
 let GAME_FINISHED;
 
+submitForm();
+
 const getRandColor = paletteSize => COLORS[
     Math.floor(Math.random() * paletteSize)
 ];
 
 CONFIG_FORM.onsubmit = e => {
     e.preventDefault();
+    submitForm();
+};
+
+function submitForm() {
     const size = parseInt(CONFIG_FORM.sizes.value);
     const colors = parseInt(CONFIG_FORM.colors.value);
 
@@ -56,7 +62,7 @@ CONFIG_FORM.onsubmit = e => {
     GAME_FINISHED = false;
 
     createGame(size, colors);
-};
+}
 
 function createGame(size, colors) {
     const table = document.createElement('table');
