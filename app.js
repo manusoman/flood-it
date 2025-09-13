@@ -1,5 +1,3 @@
-(() => { 'use strict';
-
 const CONFIG_FORM = document.getElementById('gameConfig');
 const CLICK_INFO = document.getElementById('clickInfo');
 const GAME_BOX = document.getElementById('gameBox');
@@ -147,5 +145,3 @@ fetch('https://manusoman.github.io/MindLogs/settings.json')
     COPYRIGHT.innerHTML = `Manu Soman © ${ new Date().getFullYear() }`;
     console.error(err);
 });
-
-})();
