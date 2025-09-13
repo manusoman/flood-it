@@ -30,10 +30,6 @@ let GAME_FINISHED;
 
 submitForm();
 
-const getRandColor = paletteSize => COLORS[
-    Math.floor(Math.random() * paletteSize)
-];
-
 CONFIG_FORM.onsubmit = e => {
     e.preventDefault();
     submitForm();
@@ -141,6 +137,12 @@ function gameWon(color, size) {
         }
     }
     return true;
+}
+
+function getRandColor(paletteSize) {
+    return COLORS[
+        Math.floor(Math.random() * paletteSize)
+    ];
 }
 
 // Insert the copyright text
