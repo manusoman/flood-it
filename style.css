@@ -1,0 +1,135 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: mono;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  flex: 1;
+}
+
+form {
+  text-align: center;
+}
+
+form > div > * {
+  display: inline-block;
+  vertical-align: bottom;
+  text-align: left;
+}
+
+form > div > div {
+  padding-right: 20px;
+  margin-right: 20px;
+  border-right: 1px solid gray;
+}
+
+form > div > div > * {
+  display: block;
+}
+
+select {
+  margin-top: 5px;
+  padding: 5px 10px;
+}
+
+form input {
+  padding: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #3fac3f;
+  cursor: pointer;
+}
+
+#clickInfo {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#gameBox > table {
+  position: relative;
+  margin: 5px auto 30px auto;
+  border-collapse: collapse;
+  border: 6px solid black;
+}
+
+#gameBox > table:after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+#gameBox > table.won:after {
+  content: "You Won!";
+}
+
+#gameBox > table.lost:after {
+  content: "You lost.";
+}
+
+#gameBox td {
+  width: 22px;
+  height: 22px;
+}
+
+.one {
+    background-color: #ef4042;
+}
+
+.two {
+    background-color: #17f4b8;
+}
+
+.three {
+    background-color: #4497c4;
+}
+
+.four {
+    background-color: #ffaf7b;
+}
+
+.five {
+    background-color: #ff0;
+}
+
+.six {
+    background-color: #4042b3;
+}
+
+.seven {
+    background-color: #f5f;
+}
+
+.eight {
+    background-color: #c7f5ac;
+}
+
+footer {
+  width: 100%;
+  padding: 10px 0px;
+  text-align: center;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Floot It!</title>
+    <link rel="shortcut icon" type="image/x-icon" href="res/favicon.svg">
+    <link href="style.css" rel="stylesheet"/>
+    <script src="app.js" defer type="text/javascript"></script>
+</head>
+<body>
+    <header>
+        <h2>Flood It!</h2>
+    </header>
+    <main>
+        <form id="gameConfig">
+            <div>
+                <div>
+                    <label for="sizes">Size</label>
+                    <select name="sizes" id="sizes">
+                        <option value="14">14x14</option>
+                        <option value="18">18x18</option>
+                        <option value="22">22x22</option>
+                        <option value="26">26x26</option>
+                    </select>
+                </div><div>
+                    <label for="colors">Colors</label>
+                    <select name="colors" id="colors">
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                </div><input type="submit" value="New Game">
+            </div>
+        </form>
+
+        <div id="clickInfo"></div>
+        <div id="gameBox"></div>
+    </main>
+    <footer id="copyright"></footer>
+</body>
+</html>
